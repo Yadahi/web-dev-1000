@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Viliam Vateha</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation" id="desktopMenu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger">
+        <span class="hamline"></span>
+        <span class="hamline"></span>
+        <span class="hamline"></span>
+      </div>
+      <nav id="mobileMenu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="wrapper hero-wrapper">
+          <div class="hero-content">
+            <h1>Viliam Vateha</h1>
+            <p>Spacecraft missions</p>
+            <a href="#mission" class="hero-btn">
+              <span>Mission</span>
+              <span class="material-symbols-outlined icon-sm"
+                >arrow_downward</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="wrapper">
+          <div class="about-header">
+            <h2>About the Mission</h2>
+            <p>
+              Pioneering Mars exploration through innovative spacecraft
+              technology and scientific research. Our mission aims to understand
+              the red planet's past, present, and potential for future human
+              colonization.
+            </p>
+          </div>
+          <ul class="about-cards">
+            <li class="about-card">
+              <div class="about-card-icon">
+                <span class="material-symbols-outlined icon-md"
+                  >rocket_launch</span
+                >
+              </div>
+              <h3 class="about-card-title">Advanced Technology</h3>
+              <div class="about-card-text">
+                Cutting-edge spacecraft designed for deep space exploration and
+                research missions.
+              </div>
+            </li>
+            <li class="about-card">
+              <div class="about-card-icon">
+                <span class="material-symbols-outlined icon-md">public</span>
+              </div>
+              <h3 class="about-card-title">Planetary Science</h3>
+              <div class="about-card-text">
+                Studying Mars geology, atmosphere, and potential for past or
+                present life.
+              </div>
+            </li>
+            <li class="about-card">
+              <div class="about-card-icon">
+                <span class="material-symbols-outlined icon-md"> planet </span>
+              </div>
+              <h3 class="about-card-title">Future Missions</h3>
+              <div class="about-card-text">
+                Planning next-generation missions to unlock the mysteries of the
+                red planet.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mission" id="mission">
+        <div class="wrapper">
+          <div class="mission-container">
+            <div class="mission-text">
+              <h2>Mission</h2>
+              <p>
+                Our Mars exploration program focuses on understanding the
+                planet's potential to support life and preparing for future
+                human missions to the red planet.
+              </p>
+            </div>
+            <div class="mission-image">
+              <img
+                src="https://img.freepik.com/premium-photo/futuristic-mars-mission-discovers-ancient-alien-architecture_994764-127015.jpg"
+                alt="mission mars"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="wrapper">
+          <div class="gallery-header">
+            <h2>Gallery</h2>
+            <p>
+              Explore stunning images from our Mars missions and visualize the
+              future of space exploration
+            </p>
+          </div>
+          <a
+            href="https://upload.wikimedia.org/wikipedia/commons/c/c0/Mars_2020_selfie_containing_both_perseverance_rover_and_ingenuity.gif"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Mars_2020_selfie_containing_both_perseverance_rover_and_ingenuity.gif"
+              alt="selfie containing both perseverance rover and ingenuity"
+            />
+          </a>
+          <a
+            href="https://media.gettyimages.com/id/1303996700/video/the-surface-of-mars-strewn-with-small-rocks-and-red-sand.jpg?s=640x640&k=20&c=TFsGOu2oHbUOA45krIxda2-VqhWM2-OW660njGgd1VI="
+          >
+            <img
+              src="https://media.gettyimages.com/id/1303996700/video/the-surface-of-mars-strewn-with-small-rocks-and-red-sand.jpg?s=640x640&k=20&c=TFsGOu2oHbUOA45krIxda2-VqhWM2-OW660njGgd1VI="
+              alt="mars surface"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="wrapper">
+          <div class="contact-header">
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-description">
+              Get in touch to learn more about our Mars exploration program
+            </p>
+          </div>
+
+          <form action="" class="contact-form">
+            <div class="contact-form-group">
+              <label for="name" class="contact-label">Name:</label>
+              <input type="text" name="name" id="name" class="contact-input" />
+            </div>
+
+            <div class="contact-form-group">
+              <label for="email" class="contact-label">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contact-input"
+              />
+            </div>
+
+            <div class="contact-form-group">
+              <label for="message" class="contact-label">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                class="contact-textarea"
+              ></textarea>
+            </div>
+
+            <div class="contact-form-actions">
+              <button type="submit" class="contact-button">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
