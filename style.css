@@ -486,11 +486,10 @@ nav > ul > li:hover {
 .project-item {
   display: flex;
   gap: 1.5rem;
-  padding: 2.5rem 0;
 }
 
 .project-image {
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 
 .project-image img {
@@ -499,11 +498,11 @@ nav > ul > li:hover {
 }
 
 .project-content {
-  flex-basis: 65%;
+  flex-basis: 60%;
+  margin-top: 3.5rem;
 }
 
 .project-title {
-  color: var(--accent-color);
   font-size: 1.5rem;
 }
 
