@@ -409,6 +409,13 @@ nav > ul > li:hover {
 
 .skills-card-title {
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skills-card-title .material-symbols-outlined {
+  color: var(--accent-color);
 }
 
 /* === Mission === */
