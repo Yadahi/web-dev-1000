@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Viliam Vateha</title>
+    <title>My Portfolio</title>
   </head>
   <body>
     <header>
@@ -45,15 +45,23 @@
     <main>
       <section class="hero" id="home">
         <div class="wrapper hero-wrapper">
-          <div class="hero-content">
-            <h1>Viliam Vateha</h1>
-            <p>Spacecraft missions</p>
-            <a href="#mission" class="hero-btn">
-              <span>Mission</span>
-              <span class="material-symbols-outlined icon-sm"
-                >arrow_downward</span
-              >
-            </a>
+          <div class="hero-container">
+            <div class="hero-content">
+              <p class="hero-welcome">Welcome to my portfolio</p>
+              <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Viliam Vateha</span>
+              </h1>
+              <h2 class="hero-subtitle">Full Stack Developer</h2>
+              <p class="hero-description">
+                I create beautiful, functional, and user-friendly digital
+                experiences. Specializing in modern web technologies and clean,
+                efficient code.
+              </p>
+              <div class="hero-actions">
+                <a class="hero-link hero-link-primary">View My Work</a>
+                <a class="hero-link">Get In Touch</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -61,46 +69,136 @@
       <section class="about" id="about">
         <div class="wrapper">
           <div class="about-header">
-            <h2>About the Mission</h2>
-            <p>
-              Pioneering Mars exploration through innovative spacecraft
-              technology and scientific research. Our mission aims to understand
-              the red planet's past, present, and potential for future human
-              colonization.
+            <h2 class="about-title">About Me</h2>
+            <p class="about-description">
+              I'm a passionate web developer with a keen eye for design and a
+              love for creating seamless digital experiences. With expertise in
+              modern web technologies, I bring ideas to life through clean code
+              and thoughtful design.
             </p>
           </div>
           <ul class="about-cards">
-            <li class="about-card">
-              <div class="about-card-icon">
-                <span class="material-symbols-outlined icon-md"
-                  >rocket_launch</span
-                >
+            <li class="about-card card">
+              <div class="about-card-image">
+                <img src="./assets/images/website-interface.png" alt="" />
               </div>
-              <h3 class="about-card-title">Advanced Technology</h3>
+              <h3 class="about-card-title">Clean Code</h3>
               <div class="about-card-text">
-                Cutting-edge spacecraft designed for deep space exploration and
-                research missions.
+                Writing maintainable, scalable, and efficient code
               </div>
             </li>
-            <li class="about-card">
-              <div class="about-card-icon">
-                <span class="material-symbols-outlined icon-md">public</span>
+            <li class="about-card card">
+              <div class="about-card-image">
+                <img
+                  src="./assets/images/web-designer-building-website.png"
+                  alt=""
+                />
               </div>
-              <h3 class="about-card-title">Planetary Science</h3>
+              <h3 class="about-card-title">Design Focused</h3>
               <div class="about-card-text">
-                Studying Mars geology, atmosphere, and potential for past or
-                present life.
+                Creating beautiful and intuitive user interfaces
               </div>
             </li>
-            <li class="about-card">
-              <div class="about-card-icon">
-                <span class="material-symbols-outlined icon-md"> planet </span>
+            <li class="about-card card">
+              <div class="about-card-image">
+                <img src="./assets/images/website-design.png" alt="" />
               </div>
-              <h3 class="about-card-title">Future Missions</h3>
+              <h3 class="about-card-title">Performance</h3>
               <div class="about-card-text">
-                Planning next-generation missions to unlock the mysteries of the
-                red planet.
+                Building fast and optimized web applications
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="wrapper">
+          <div class="skills-header">
+            <h2 class="skills-title">Skills & Technologies</h2>
+            <p class="skills-description">
+              A comprehensive set of tools and technologies I work with
+            </p>
+          </div>
+          <ul class="skills-cards">
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">React / Next.js</h3>
+              <p class="skills-card-text">
+                Build modern interactive UIs and fast server-rendered apps.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">TypeScript</h3>
+              <p class="skills-card-text">
+                Adds strong typing and better tooling to JavaScript projects.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">UI/UX Design</h3>
+              <p class="skills-card-text">
+                Designs intuitive, user-centered interfaces.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">Node.js</h3>
+              <p class="skills-card-text">
+                Creates scalable backend services with JavaScript.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">Database Design</h3>
+              <p class="skills-card-text">
+                Models data for reliability and performance.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">Cloud Services</h3>
+              <p class="skills-card-text">
+                Deploys and scales applications using cloud platforms.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">Responsive Design</h3>
+              <p class="skills-card-text">
+                Ensures layouts work beautifully across all devices.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">Git & Version Control</h3>
+              <p class="skills-card-text">
+                Manages code history and collaborative workflows.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">Tailwind CSS</h3>
+              <p class="skills-card-text">
+                Utility-first CSS for rapid UI development.
+              </p>
+            </li>
+
+            <li class="skills-card card">
+              <div class="skills-card-icon">icon</div>
+              <h3 class="skills-card-title">RESTful APIs</h3>
+              <p class="skills-card-text">
+                Designs clear, resource-oriented HTTP APIs.
+              </p>
             </li>
           </ul>
         </div>
@@ -108,61 +206,183 @@
 
       <section class="mission" id="mission">
         <div class="wrapper">
+          <div class="mission-header">
+            <h2 class="mission-title">My Mission</h2>
+            <p class="mission-description">
+              Crafting digital solutions that make a difference
+            </p>
+          </div>
           <div class="mission-container">
             <div class="mission-text">
-              <h2>Mission</h2>
               <p>
-                Our Mars exploration program focuses on understanding the
-                planet's potential to support life and preparing for future
-                human missions to the red planet.
+                My mission is to create exceptional digital experiences that
+                bridge creativity and functionality. I strive to build
+                innovative web solutions that not only meet current needs but
+                anticipate future technological advances, all while maintaining
+                the highest standards of code quality and user experience.
+              </p>
+              <p>
+                Through a combination of technical expertise and creative
+                problem-solving, I aim to deliver solutions that empower
+                businesses and delight users, creating lasting positive impact
+                in the digital landscape.
               </p>
             </div>
             <div class="mission-image">
               <img
-                src="https://img.freepik.com/premium-photo/futuristic-mars-mission-discovers-ancient-alien-architecture_994764-127015.jpg"
-                alt="mission mars"
+                src="./assets/images/dashboard-design.png"
+                alt="Digital dashboard design representing modern solutions"
+                class="mission-img"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="gallery" id="gallery">
+      <section class="projects" id="projects">
         <div class="wrapper">
-          <div class="gallery-header">
-            <h2>Gallery</h2>
-            <p>
-              Explore stunning images from our Mars missions and visualize the
-              future of space exploration
+          <div class="projects-header">
+            <h2 class="projects-title">Featured Projects</h2>
+            <p class="projects-description">
+              Here are some of the projects I've worked on
             </p>
           </div>
-          <a
-            href="https://upload.wikimedia.org/wikipedia/commons/c/c0/Mars_2020_selfie_containing_both_perseverance_rover_and_ingenuity.gif"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Mars_2020_selfie_containing_both_perseverance_rover_and_ingenuity.gif"
-              alt="selfie containing both perseverance rover and ingenuity"
-            />
-          </a>
-          <a
-            href="https://media.gettyimages.com/id/1303996700/video/the-surface-of-mars-strewn-with-small-rocks-and-red-sand.jpg?s=640x640&k=20&c=TFsGOu2oHbUOA45krIxda2-VqhWM2-OW660njGgd1VI="
-          >
-            <img
-              src="https://media.gettyimages.com/id/1303996700/video/the-surface-of-mars-strewn-with-small-rocks-and-red-sand.jpg?s=640x640&k=20&c=TFsGOu2oHbUOA45krIxda2-VqhWM2-OW660njGgd1VI="
-              alt="mars surface"
-            />
-          </a>
+
+          <div class="project-list">
+            <article class="project-item">
+              <div class="project-image">
+                <img
+                  src="./assets/images/employee-business-profile.png"
+                  alt="Project 2"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title gradient-text">Project One</h3>
+                <p class="project-description">
+                  A comprehensive web application built with React and Node.js.
+                  Features include user authentication, real-time updates, and
+                  responsive design.
+                </p>
+                <div class="project-actions">
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+            </article>
+
+            <div class="project-divider"></div>
+
+            <article class="project-item">
+              <div class="project-image">
+                <img
+                  src="./assets/images/task-management.png"
+                  alt="Project 1"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title gradient-text">Project Two</h3>
+                <p class="project-description">
+                  An e-commerce platform developed using Next.js and Stripe
+                  integration. Includes shopping cart functionality and secure
+                  payment processing.
+                </p>
+                <div class="project-actions">
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+            </article>
+
+            <div class="project-divider"></div>
+
+            <article class="project-item">
+              <div class="project-image">
+                <img src="" alt="Project 3" />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title gradient-text">Project Three</h3>
+                <p class="project-description">
+                  A mobile-first web application built with TypeScript and
+                  Express. Features offline functionality and progressive
+                  enhancement.
+                </p>
+                <div class="project-actions">
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="contact" id="contact">
         <div class="wrapper">
           <div class="contact-header">
-            <h2 class="contact-title">Contact</h2>
+            <h2 class="contact-title">Get In Touch</h2>
             <p class="contact-description">
-              Get in touch to learn more about our Mars exploration program
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision.
             </p>
           </div>
+
+          <ul class="contact-cards">
+            <li class="contact-card card">
+              <div class="contact-card-icon">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div class="contact-card-content">
+                <p class="contact-card-service">Email</p>
+                <a class="contact-card-link" href="mailto:email@example.com"
+                  >email@example.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-card card">
+              <div class="contact-card-icon">
+                <span class="material-symbols-outlined">link</span>
+              </div>
+              <div class="contact-card-content">
+                <p class="contact-card-service">LinkedIn</p>
+                <a
+                  class="contact-card-link"
+                  href="https://linkedin.com/in/yourprofile"
+                  target="_blank"
+                  rel="noreferrer"
+                  >linkedin.com/in/profile</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-card card">
+              <div class="contact-card-icon">
+                <span class="material-symbols-outlined">code</span>
+              </div>
+              <div class="contact-card-content">
+                <p class="contact-card-service">GitHub</p>
+                <a
+                  class="contact-card-link"
+                  href="https://github.com/yourusername"
+                  target="_blank"
+                  rel="noreferrer"
+                  >github.com/username</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-card card">
+              <div class="contact-card-icon">
+                <span class="material-symbols-outlined">location_on</span>
+              </div>
+              <div class="contact-card-content">
+                <p class="contact-card-service">Location</p>
+                <p class="contact-card-link">City, Country</p>
+              </div>
+            </li>
+          </ul>
+
+          <p class="contact-note">
+            Let's discuss how I can help bring your ideas to life. Whether it's
+            a new project or collaboration, I'd love to hear from you.
+          </p>
 
           <form action="" class="contact-form">
             <div class="contact-form-group">
@@ -197,7 +417,16 @@
           </form>
         </div>
       </section>
+      <div class="hero-shape-left"></div>
+      <div class="hero-shape-right"></div>
     </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <p>© 2025 Viliam Vateha. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
