@@ -89,11 +89,6 @@ nav > ul > li:hover {
   background-color: var(--accent-color);
 }
 
-section {
-  position: relative;
-  z-index: -1;
-}
-
 /* Hidden mobil menu */
 #mobileMenu {
   display: none;
