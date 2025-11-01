@@ -28,7 +28,11 @@ const sectionColors = {
 
 const observer = new IntersectionObserver(
   (entries) => {
+    console.log("entries", entries);
+
     entries.forEach((entry) => {
+      console.log("entry", entry);
+
       if (entry.isIntersecting) {
         const intersectionRatio = entry.intersectionRatio;
 
@@ -48,13 +52,16 @@ const observer = new IntersectionObserver(
             ${changedColor} 70%,
             ${originalColor} 100%)`;
         } else {
-          entry.target.style.backgroundColor = "";
+          entry.target.style.background = "";
         }
+      } else {
+        entry.target.style.background = "";
       }
     });
   },
   {
     threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+    // threshold: [0.2, 0.3, 0.5],
   }
 );
 
