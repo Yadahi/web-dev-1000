@@ -1,3 +1,5 @@
+const MAX_CHANGE = 5;
+
 let hamb = document.getElementById("hamburger");
 let menu = document.querySelector("#mobileMenu");
 
@@ -16,6 +18,14 @@ function toggle() {
 
 const sections = document.querySelectorAll("section");
 
+const sectionColors = {
+  about: 86, // green
+  skills: 200, // blue
+  mission: 300, // purple
+  projects: 30, // orange
+  contact: 340, // pink
+};
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -23,9 +33,12 @@ const observer = new IntersectionObserver(
         const intersectionRatio = entry.intersectionRatio;
 
         if (entry.target.id !== "home" && intersectionRatio >= 0.3) {
-          const changedColor = `hsl(${
-            86 - intersectionRatio * 100
-          }, 100%, 95%)`;
+          const baseHue = sectionColors[entry.target.id] || 86;
+          const normalizedRatio = intersectionRatio * 200;
+
+          const changedColor = `hsl(${baseHue - normalizedRatio}, 100%, ${
+            95 - intersectionRatio * MAX_CHANGE
+          }%)`;
           const originalColor = `hsl(86, 100%, 95%)`;
 
           entry.target.style.background = `linear-gradient(to bottom, 
