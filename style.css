@@ -15,7 +15,7 @@ html {
   --accent-color: #f042b1;
   --hover-card-color: hsl(322, 85%, 90%);
   /* Background */
-  --primary-bg: #f3ffe3;
+  --primary-bg: hsl(86, 100%, 95%);
   --secondary-bg: #fff;
   /* Border */
   --border-color: #dce2cf;
@@ -87,6 +87,11 @@ nav > ul > li a {
 
 nav > ul > li:hover {
   background-color: var(--accent-color);
+}
+
+section {
+  position: relative;
+  z-index: -1;
 }
 
 /* Hidden mobil menu */
@@ -175,11 +180,13 @@ nav > ul > li:hover {
   border: 1px solid var(--border-color);
   background-color: var(--secondary-bg);
   color: var(--black-text);
+  transition: transform 250ms ease-in-out;
 }
 
 .card:hover {
   box-shadow: -1px 1px 10px 0px var(--hover-card-color);
   border-color: var(--hover-card-color);
+  transform: scale(1.01);
 }
 
 @media (max-width: 599px) {
@@ -269,6 +276,10 @@ nav > ul > li:hover {
   color: #fff;
 }
 
+.hero-link-secondary {
+  border-color: var(--black-text);
+}
+
 .hero-shape-right,
 .hero-shape-left {
   position: absolute;
@@ -284,6 +295,20 @@ nav > ul > li:hover {
   width: 30%;
   height: 40%;
   opacity: 0.35;
+  animation: moveShapeLeft 13s ease infinite alternate;
+}
+
+@keyframes moveShapeLeft {
+  0% {
+    left: 10px;
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    left: 50%;
+    transform: scale(0.5);
+  }
 }
 
 .hero-shape-right {
@@ -292,6 +317,20 @@ nav > ul > li:hover {
   width: 15%;
   height: 15%;
   opacity: 0.75;
+  animation: moveShapeRight 20s ease-in infinite alternate;
+}
+
+@keyframes moveShapeRight {
+  0% {
+    right: 10%;
+  }
+  50% {
+    bottom: 30%;
+    transform: scale(1.5);
+  }
+  100% {
+    right: 80%;
+  }
 }
 
 .hero-btn {
