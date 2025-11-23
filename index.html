@@ -18,11 +18,14 @@
   </head>
   <body>
     <header>
+      <div class="logo"></div>
       <nav class="navigation" id="desktopMenu">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#mission">Mission</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -58,8 +61,12 @@
                 efficient code.
               </p>
               <div class="hero-actions">
-                <a class="hero-link hero-link-primary">View My Work</a>
-                <a class="hero-link hero-link-secondary">Get In Touch</a>
+                <a class="hero-link hero-link-primary" href="#projects"
+                  >View My Work</a
+                >
+                <a class="hero-link hero-link-secondary" href="#contact"
+                  >Get In Touch</a
+                >
               </div>
             </div>
           </div>
@@ -335,15 +342,78 @@
           </div>
         </div>
       </section>
+      <section class="gallery" id="gallery">
+        <div class="wrapper">
+          <div class="gallery-header">
+            <h2 class="gallery-title">Gallery</h2>
+            <p class="gallery-description"></p>
+          </div>
+          <div class="gallery-content">
+            <div class="img-container">
+              <img
+                src="assets/images/photo-1.png"
+                alt=""
+                class="gallery-thumb"
+                data-large="assets/images/photo-1.png"
+              />
+            </div>
+            <div class="img-container">
+              <img
+                src="assets/images/photo-2.png"
+                alt=""
+                class="gallery-thumb"
+                data-large="assets/images/photo-2.png"
+              />
+            </div>
+            <div class="img-container">
+              <img
+                src="assets/images/photo-3.png"
+                alt=""
+                class="gallery-thumb"
+                data-large="assets/images/photo-3.png"
+              />
+            </div>
+            <div class="img-container">
+              <img
+                src="assets/images/photo-4.png"
+                alt=""
+                class="gallery-thumb"
+                data-large="assets/images/photo-4.png"
+              />
+            </div>
+            <div class="img-container">
+              <img
+                src="assets/images/photo-5.png"
+                alt=""
+                class="gallery-thumb"
+                data-large="assets/images/photo-5.png"
+              />
+            </div>
+            <div class="img-container">
+              <img
+                src="assets/images/photo-6.png"
+                alt=""
+                class="gallery-thumb"
+                data-large="assets/images/photo-6.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="contact" id="contact">
         <div class="wrapper">
           <div class="contact-header">
             <h2 class="contact-title">Get In Touch</h2>
-            <p class="contact-description">
-              I'm always open to discussing new projects, creative ideas, or
-              opportunities to be part of your vision.
-            </p>
+            <div class="contact-intro">
+              <p class="contact-description">
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your vision.
+              </p>
+              <div class="contact-img">
+                <img src="/assets/images/personal-img.png" alt="" />
+              </div>
+            </div>
           </div>
 
           <ul class="contact-cards">
@@ -441,7 +511,18 @@
         </div>
       </section>
       <div class="hero-shape-left"></div>
+      <div class="hero-shape-middle"></div>
       <div class="hero-shape-right"></div>
+
+      <!-- LIGHTBOX MODAL -->
+      <div id="lightbox" class="lightbox hidden">
+        <div class="lightbox-backdrop"></div>
+        <figure class="lightbox-content" id="lightbox-content">
+          <button class="lightbox-close">&times;</button>
+          <img id="lightbox-image" src="" alt="" />
+          <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+      </div>
     </main>
 
     <footer class="footer">

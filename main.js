@@ -28,11 +28,7 @@ const sectionColors = {
 
 const observer = new IntersectionObserver(
   (entries) => {
-    console.log("entries", entries);
-
     entries.forEach((entry) => {
-      console.log("entry", entry);
-
       if (entry.isIntersecting) {
         const intersectionRatio = entry.intersectionRatio;
 
@@ -68,4 +64,41 @@ const observer = new IntersectionObserver(
 // Observe all sections
 sections.forEach((section) => {
   observer.observe(section);
+});
+
+// Lightbox modal
+const modal = document.getElementById("lightbox");
+const thumbs = document.querySelectorAll(".gallery-thumb");
+const modalImg = document.getElementById("lightbox-image");
+const modalCaption = document.getElementById("lightbox-caption");
+const closeBtn = document.querySelector(".lightbox-close");
+
+thumbs.forEach((thumb) => {
+  const imageSrc = thumb.dataset.large;
+
+  thumb.addEventListener("click", () => {
+    modalImg.src = imageSrc;
+    modalImg.alt = thumb.alt;
+    modalCaption.textContent = thumb.alt;
+    modal.classList.remove("hidden");
+  });
+});
+
+function closeModal() {
+  modal.classList.add("hidden");
+}
+
+closeBtn.addEventListener("click", closeModal);
+document.addEventListener("keydown", (e) => {
+  console.log("e", e);
+
+  if (e.key === "Escape") {
+    closeModal();
+  }
+});
+
+modal.addEventListener("click", (e) => {
+  if (!e.target.closest("#lightbox-content")) {
+    closeModal();
+  }
 });
